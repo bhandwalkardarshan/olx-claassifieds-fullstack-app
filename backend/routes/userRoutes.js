@@ -7,7 +7,7 @@ const userRoutes = express.Router();
 require('dotenv').config();
 
 // User registration
-userRoutes.post('/signup', async (req, res) => {
+userRoutes.post('/register', async (req, res) => {
   try {
     const { email, password, confirmPassword } = req.body;
 
